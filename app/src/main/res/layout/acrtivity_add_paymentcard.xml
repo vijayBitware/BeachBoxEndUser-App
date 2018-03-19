@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" />
+
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:id="@+id/tvBackCards"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.9"
+                android:background="@drawable/back_rectangle"
+                android:gravity="center"
+                android:text="Back"
+                android:textColor="@color/back_text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+
+        <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.4"
+            android:gravity="center"
+            android:text="Add Payments"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Enter card Details"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.5"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <com.beachbox.beachbox.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:gravity="center|left"
+                            android:text="Card Number"
+                            android:textColor="@color/back_text_color"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etCardNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/edt_cellborder"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:maxLength="19"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <com.beachbox.beachbox.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:gravity="center|left"
+                            android:text="MM/YYYY"
+                            android:textColor="@color/back_text_color"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etmonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/edt_cellborder"
+                            android:gravity="left|center"
+                            android:inputType="number"
+                            android:maxLength="7"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.8"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <com.beachbox.beachbox.widgets.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:gravity="center|left"
+                                android:text="CVV"
+                                android:textColor="@color/back_text_color"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etCvv"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="5"
+                                android:background="@drawable/edt_cellborder"
+                                android:gravity="left|center"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <com.beachbox.beachbox.widgets.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:gravity="center|left"
+                                android:text="Zipcode"
+                                android:textColor="@color/back_text_color"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/etZipCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="5"
+                                android:background="@drawable/edt_cellborder"
+                                android:gravity="left|center"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <CheckBox
+                    android:id="@+id/chkRememberPass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"></CheckBox>
+
+                <com.beachbox.beachbox.widgets.TextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:gravity="center|left"
+                    android:text="Remember My Card"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:id="@+id/tvSaveCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Save Card"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

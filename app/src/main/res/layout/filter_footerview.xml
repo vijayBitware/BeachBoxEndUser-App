@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <LinearLayout  android:layout_width="match_parent" android:layout_height="45dp" android:orientation="horizontal" android:layout_weight="10" android:padding="5dp" >
+
+        <com.beachbox.beachbox.widgets.TextViewBold android:id="@+id/ratingText" android:layout_height="match_parent" android:layout_weight="8"  android:layout_width="0dp" android:text="Ratings" android:gravity="center|left" android:paddingLeft="10dp" />
+        <CheckBox
+            android:id="@+id/chkRating"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+<View android:layout_width="match_parent" android:layout_height="1dp"  android:background="@color/gray" android:padding="5dp"/>
+    <LinearLayout  android:layout_width="match_parent" android:layout_height="45dp" android:orientation="horizontal" android:layout_weight="10" android:padding="5dp" >
+
+        <com.beachbox.beachbox.widgets.TextViewBold  android:id="@+id/fvText" android:layout_height="match_parent" android:layout_weight="8"  android:layout_width="0dp" android:text="Favorite" android:gravity="center|left" android:paddingLeft="10dp" />
+        <CheckBox
+            android:id="@+id/chkFavourite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout  android:layout_width="match_parent" android:layout_height="50dp" >
+        <com.beachbox.beachbox.widgets.TextViewBold  android:id="@+id/tvFilterText" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="left|center" android:textColor="@color/back_text_color"  android:text="cnsksal" android:paddingLeft="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

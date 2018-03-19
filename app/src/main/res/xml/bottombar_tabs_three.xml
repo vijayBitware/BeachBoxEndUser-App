@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_restaurants"
+        icon="@drawable/resto_black"
+        title="Restaurants" />
+    <tab
+        id="@+id/tab_cart"
+        icon="@drawable/cart_black"
+        title="Cart" />
+    <tab
+        id="@+id/tab_orders"
+        icon="@drawable/order_black"
+        title="Orders" />
+    <tab
+        id="@+id/tab_account"
+        icon="@drawable/account_black"
+        title="Account" />
+</tabs>

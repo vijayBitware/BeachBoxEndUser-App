@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">BeachBox</string>
+
+    <string name="google_map_key">AIzaSyDJpxzH6DcsIf1Rb3YUFXykEizPyosM9ZQ</string>
+
+    <!--activity_chooser-->
+    <string name="delivery">Delivery</string>
+    <string name="pickUp">Pick Up</string>
+    <string name="signin">Sign in</string>
+    <string name="or">Or</string>
+    <string name="Create_an_account">Create an account</string>
+
+    <!--activity_signin-->
+    <string name="alreadyuser">New to Beach Box Enterprise LLC?</string>
+    <string name="orWithEmail">or with email</string>
+    <string name="orUseEmail">or use email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetpassword">Forgot your password?</string>
+
+    <string name="createAccount">Create Account</string>
+    <string name="alreadyHaveAccount">Already have an account?</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="filter">Filter</string>
+    <string name="Restaurant">Restaurants</string>
+    <string name="open">Open</string>
+
+    <!--profile-->
+    <string name="myAccount">My Account</string>
+    <string name="Edit">Edit</string>
+    <string name="payments">Payments</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+
+    <!--order-->
+    <string name="orders">Orders</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="history">History</string>
+    <string name="orderStatus">Order Status</string>
+    <string name="notification">Notification</string>
+
+
+    <string name="accept">Accepted</string>
+    <string name="ready">Ready</string>
+    <string name="delivering">Pickedup</string>
+
+    <string name="Deliverer">Deliverer</string>
+    <string name="remove">Remove</string>
+    <string name="cartTitle">Cart</string>
+    <string name="addNote"> Add comment</string>
+    <string name="paymentInfo">Payment Information</string>
+
+    <string name="dumyAccountNumber">*************6557</string>
+    <string name="edit">Edit</string>
+
+    <string name="noTip">No Tip</string>
+    <string name="Custom">Custom</string>
+
+
+    <string name="orderSubtotal">Order Subtotal</string>
+    <string name="salesTax">Sales Tax</string>
+    <string name="tip">Tip</string>
+
+    <string name="tipValue">$6.59</string>
+    <string name="placeOrder">Place Your Order: $44.85</string>
+    <string name="cart">China Wok</string>
+
+    <!--facebook_app_id BitwareTechnologies Acc-->
+    <!--<string name="facebook_app_id">378554449182090</string>-->
+
+    <!--facebook_app_id Vinay FB Acc-->
+    <string name="facebook_app_id">139469476636728</string>
+
+
+    <!--no connection msg-->
+    <string name="noNetworkMsg">Network Error! Please check your internet connection.</string>
+    <string name="noResponseMsg">Something went wrong! Please try again later.</string>
+    <string name="allFieldsAreCompulsary"> All the fields are mandatory</string>
+    <string name="pleaseEnterTheValidEmailid">Please enter the valid Emailid</string>
+    <string name="passConfirmPassShouldbeMatch"> Password and confirm password should be match.</string>
+    <string name="PleaseEnterTheValidMobileNo">Please enter the valid mobile no</string>
+    <string name="PleaseEnterTheValidEmail">Please enter valid Email Id</string>
+    <string name="EnterYourEmailID">Enter Your Email </string>
+    <string name="specialInstruction">Special Instructions</string>
+    <string name="map">Map</string>
+    <string name="pleaseLogin">Please Login</string>
+    <string name="upcomingOrderErrMsg">Upcoming order are not available.Please place order first</string>
+    <string name="historyOrderErrMsg">Order history not available.Please place order first</string>
+    <string name="login">Login</string>
+    <string name="seeorderaccount">Please login to see your account</string>
+    <string name="selectOtherResto">Food is alreday added in your cart from other restaurant 1, do you wish to discard it and order from another restaurant?</string>
+    <string name="noEmailWithFacebook">Ohh wait, your email is not associate with your Facebook account.\nPlease enter your email</string>
+    <string name="noPhoneWithFacebook">Ohh wait, your phone number is not associate with your Facebook account.\nPlease enter your phone no</string>
+    <string name="restauranrtisclosed"> Oops! Restaurant is closed.</string>
+    <string name="orderloginmsg"> Please login to see your Upcoming Order and Order History</string>
+    <string name="minphonenomsg"> Please enter minimum 10 character phone number</string>
+    <string name="minEightCharPass"> Please enter minimum 8 character password</string>
+    <string name="notiloginmsg"> Please login to see your notification</string>
+
+    <string name="Permissionheader"> Permission </string>
+    <string name="cameraPermission"> Beach Box Enterprise required camera permission</string>
+    <string name="callPermission"> Beach Box Enterprise required call permission</string>
+    <string name="locationStoragePermission"> BeachBox Enterprise required location and storage permission</string>
+    <string name="cameraSettingPermission"> Go to Permissions to Grant Camera permission</string>
+    <string name="grantpermission"> Grant</string>
+    <string name="cancelpermission"> Cancel</string>
+    <string name="beachBoxEnterprise">Beach Box Enterprise</string>
+    <string name="favRestoMsg">Please login first to favourite restaurant</string>
+    <string name="storagePermission">Beach Box Enterprise required location storage and camera permissions</string>
+    <string name="strOtherCategory">This menu is available in</string>
+
+
+    <string name="uodateTitle">Update Available</string>
+    <string name="updateMsg">BeachBox Enterprise update available, please update the app.</string>
+    <string name="updateOk">Update</string>
+    <string name="updateCancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_send_receive_bitcoin">SendReceiveBitcoinActivity</string>
+
+
+</resources>

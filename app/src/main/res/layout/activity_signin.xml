@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@drawable/btn_back_new"
+                android:id="@+id/tv_back"/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:text="Back"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/back_text_color"
+                android:background="@drawable/back_rectangle"
+                android:id="@+id/tv_back"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="@string/signin"
+            android:textSize="19sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:background="@drawable/icon_rectangle_bar_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9.4"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:src="@drawable/logo"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"/>
+                <com.beachbox.beachbox.widgets.TextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:textSize="12sp"
+                    android:gravity="right|center"
+                    android:text="@string/alreadyuser"/>
+
+
+                <View  android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"/>
+
+                <com.beachbox.beachbox.widgets.TextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="left|center"
+                    android:text="@string/Create_an_account"
+                    android:textColor="@color/blue"
+                    android:id="@+id/tv_createAnAccount"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="10" android:background="@drawable/btn_fb_new">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                <LinearLayout
+                    android:id="@+id/fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:weightSum="10" android:background="@drawable/btn_fb_new">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/textView4" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/facebook_letter"
+                        />
+
+                    <View  android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="left|center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Continue with Facebook"/>
+                </LinearLayout>
+                   <!-- <Button
+                        android:id="@+id/fb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/com_facebook_blue"
+                        android:onClick="onClick"
+                        android:text="Continue with Facebook"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />-->
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/icon_rectangle_bar_gray"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <com.beachbox.beachbox.widgets.TextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="@string/orWithEmail"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/icon_rectangle_bar_gray"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+            <com.beachbox.beachbox.widgets.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="@string/email"
+                android:textSize="19dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/edt_cellborder"
+                android:layout_marginRight="1dp"
+                android:paddingLeft="5dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/edtEmail"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:weightSum="10"
+                android:orientation="horizontal">
+                <com.beachbox.beachbox.widgets.TextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="@string/password"
+                    android:textSize="19dp"
+                    android:textColor="@color/black"/>
+                <com.beachbox.beachbox.widgets.TextViewLight
+                    android:id="@+id/tvForgotPass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/forgetpassword"
+                    android:textSize="16dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/edt_cellborder"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.8"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textPassword"
+                    android:gravity="left|center"
+                    android:paddingLeft="7dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+           <!-- <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/edt_cellborder"
+                android:layout_marginRight="1dp"
+                android:paddingLeft="5dp"
+                android:password="true"
+                android:id="@+id/edt_password"
+                android:singleLine="true"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/signin"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:gravity="center"
+                android:id="@+id/tv_signIn"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+</LinearLayout>

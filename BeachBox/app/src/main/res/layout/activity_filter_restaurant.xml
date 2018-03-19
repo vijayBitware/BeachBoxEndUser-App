@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:id="@+id/ll_map">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.9"
+                android:text="Back"
+                android:gravity="center"
+                android:textColor="@color/back_text_color"
+                android:background="@drawable/back_rectangle"
+                android:id="@+id/tvFilterBack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+        <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.4"
+            android:text="Filter"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.9"
+                android:text="Done"
+                android:gravity="center"
+                android:textColor="@color/back_text_color"
+                android:background="@drawable/back_rectangle"
+                android:id="@+id/tvDonefilter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ExpandableListView android:id="@+id/lvFilter"  android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="9" android:divider="@color/gray" android:dividerHeight="1dp" android:padding="15dp" android:groupIndicator="@null" >
+
+    </ExpandableListView>
+
+</LinearLayout>

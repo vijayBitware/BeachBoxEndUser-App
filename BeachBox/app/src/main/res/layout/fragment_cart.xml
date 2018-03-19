@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"/>
+            <com.beachbox.beachbox.widgets.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.5"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/back_text_color"
+                android:id="@+id/tv_back"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"/>
+        </LinearLayout>
+
+        <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:text="@string/cartTitle"
+            android:textSize="19sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"/>
+            <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:text="Clear"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/back_text_color"
+            android:background="@drawable/back_rectangle"
+            android:id="@+id/tv_clear"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+ <com.beachbox.beachbox.widgets.TextViewBold  android:id="@+id/cardemptytext" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5" android:text="Your cart is empty!" android:gravity="center" android:textColor="@color/red" android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lv_cartList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:divider="@null"></ListView>
+</LinearLayout>

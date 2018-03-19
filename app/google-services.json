@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "866086160065",
+    "firebase_url": "https://beachbox-2f94b.firebaseio.com",
+    "project_id": "beachbox-2f94b",
+    "storage_bucket": "beachbox-2f94b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866086160065:android:a8c39f2649e470b3",
+        "android_client_info": {
+          "package_name": "com.beachbox.beachbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866086160065-85bts6ll3q2d0aluqilmghueec5trnjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4SAGHjNddYF15tUa5Miu0NuTCHdPxyVk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

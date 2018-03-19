@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="10"
+    android:background="@color/white">
+
+
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" android:weightSum="10" android:orientation="vertical"
+        android:background="@color/white" android:layout_margin="18dp">
+
+        <com.beachbox.beachbox.widgets.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="BeachBox"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <com.beachbox.beachbox.widgets.TextViewRegular
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+                    android:text="@string/noPhoneWithFacebook"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout   android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4" android:weightSum="10" android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/etUserEmailFB"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:gravity="left|center"
+                        android:paddingLeft="15dp"
+                        android:hint="Email"
+                        android:background="@drawable/edt_cellborder"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+
+                    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.3" />
+
+                    <EditText
+                        android:id="@+id/etUserPhoneFB"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:gravity="left|center"
+                        android:hint="Phone number"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/edt_cellborder"
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:maxLength="14"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+                -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8"
+                    android:weightSum="10">
+
+                    <com.beachbox.beachbox.widgets.TextViewBold
+                        android:id="@+id/tvOkEmailDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@color/green"
+                        android:gravity="center"
+                        android:text="Ok"
+                        android:textSize="17sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/ivClose" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/close_dialog" android:layout_alignParentRight="true" android:paddingRight="8dp"/>
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
